@@ -20,9 +20,15 @@ const HeroSection = () => {
                     </div>
                     <div className='pl-2 text-center md:text-left'>
                         {/* content text */}
-                        <h1 className='text-sm md:text-base text-white/60 mb-2  '>Hello! I Am <span className='text-[#7127BA]'>Tahia</span> </h1>
+                        <p className='text-sm md:text-base text-white/60 mb-2'>
+                            Hello! I Am <span className='text-[#7127BA]'>Tahia</span>
+                        </p>
+
+                        {/* MAIN heading */}
                         <h1 className='text-4xl sm:text-5xl font-normal tracking-tight leading-[1.15]'>
-                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal tracking-tight">
+
+                            {/* typewriter part */}
+                            <span className="block text-3xl sm:text-4xl md:text-5xl">
                                 <Typewriter
                                     words={[
                                         'Junior Frontend Developer',
@@ -36,18 +42,28 @@ const HeroSection = () => {
                                     typeSpeed={65}
                                     deleteSpeed={40}
                                     delaySpeed={1200}
-                                /></h2>
-                            <span className='block'>Confident is the {""}
+                                />
+                            </span>
+
+                            {/* normal text */}
+                            <span className='block mt-1'>
+                                Confident is the{" "}
                                 <span className='relative inline-block align-baseline'>
                                     <span className='relative z-10 text-[#7127BA]'>game</span>
                                     <span className='pointer-events-none absolute -inset-x-2 -inset-y-2 translate-y-1 -z-10 -rotate-2 w-40 h-17'>
                                         <Image src="/images/Ellipse5.PNG" alt='' fill className='object-contain' priority />
                                     </span>
-                                    ...</span>
+                                    ...
+                                </span>
                             </span>
-                       </h1> 
-                        <p className='mt-2 text-[10px] md:text-xs text-white/60 max-w-md md:max-w-lg mx-auto md:mx-0'>Because if the person is confident, then what&apos;s the barrier?</p>
+
+                        </h1>
+
+                        <p className='mt-2 text-[10px] md:text-xs text-white/60 max-w-md md:max-w-lg mx-auto md:mx-0'>
+                            Because if the person is confident, then what&apos;s the barrier?
+                        </p>
                     </div>
+
                 </ScrollReveal>
             </div>
         </section>
