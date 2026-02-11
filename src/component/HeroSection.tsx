@@ -47,9 +47,9 @@ const HeroSection = () => {
                                 Confident is the{" "}
                                 <span className='relative inline-block align-baseline'>
                                     <span className='relative z-10 text-[#7127BA]'>game</span>
-                                    <span className='pointer-events-none absolute -inset-x-2 -inset-y-2 translate-y-1 -z-10 -rotate-2 w-40 h-17'>
+                                    {/* <span className='pointer-events-none absolute -inset-x-2 -inset-y-2 translate-y-1 -z-10 -rotate-2 w-40 h-17'>
                                         <Image src="/images/Ellipse5.PNG" alt='curvy' fill className='object-contain' priority />
-                                    </span>
+                                    </span> */}
                                     ...
                                 </span>
                             </span>
