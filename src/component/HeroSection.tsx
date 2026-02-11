@@ -23,10 +23,8 @@ const HeroSection = () => {
                         <p className='text-sm md:text-base text-white/60 mb-2'>
                             Hello! I Am <span className='text-[#7127BA]'>Tahia</span>
                         </p>
-
                         {/* MAIN heading */}
                         <h1 className='text-4xl sm:text-5xl font-normal tracking-tight leading-[1.15]'>
-
                             {/* typewriter part */}
                             <span className="block text-3xl sm:text-4xl md:text-5xl">
                                 <Typewriter
@@ -44,7 +42,6 @@ const HeroSection = () => {
                                     delaySpeed={1200}
                                 />
                             </span>
-
                             {/* normal text */}
                             <span className='block mt-1'>
                                 Confident is the{" "}
@@ -56,14 +53,11 @@ const HeroSection = () => {
                                     ...
                                 </span>
                             </span>
-
                         </h1>
-
                         <p className='mt-2 text-[10px] md:text-xs text-white/60 max-w-md md:max-w-lg mx-auto md:mx-0'>
                             Because if the person is confident, then what&apos;s the barrier?
                         </p>
                     </div>
-
                 </ScrollReveal>
             </div>
         </section>

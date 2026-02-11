@@ -26,7 +26,7 @@ const About = () => {
     </span>
 </div>
                 <p className='mt-5 flex items-center gap-1.5'>Currently, I &apos;m building Personal <span className='inline-flex items-center gap-2 text-[#7127BA]'><GrProjects className='size-4' aria-hidden />Projects</span></p>
-                <p className='mt-10 text-white/60 leading-7'>A Full Stack Web Developer with hands-on experience building modern web applications. I focus on creating responsive, user-friendly solutions that balance technical functionality with real user needs.</p>
+                <p className='mt-10 text-white/60 leading-7'>A Full Stack Web Developer with hands-on experience building modern web applications. I focus on creating responsive, user-friendly solutions that balance technical functionality with real user needs. My skill leads me to act more confident and make customer satisfied.</p>
             </ScrollReveal>
 </section>
 )

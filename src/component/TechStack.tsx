@@ -1,19 +1,49 @@
-import Image from 'next/image'
+'use client'
 import React from 'react'
-import ScrollReveal from './ScrollReveal'
+import {
+  RiReactjsLine, RiNextjsLine, RiJavascriptLine,
+  RiTailwindCssLine, RiNodejsLine
+} from 'react-icons/ri'
+import { SiMongodb, SiRedux, SiFigma } from 'react-icons/si'
 
-const TechStack = () => {
+const SkillSection = () => {
+  const skills = [
+    { icon: RiReactjsLine, color: 'text-cyan-400' },
+    { icon: RiNextjsLine, color: 'text-white' },
+    { icon: RiJavascriptLine, color: 'text-yellow-400' },
+    { icon: RiTailwindCssLine, color: 'text-sky-400' },
+    { icon: RiNodejsLine, color: 'text-green-500' },
+    { icon: SiMongodb, color: 'text-green-400' },
+    { icon: SiRedux, color: 'text-purple-400' },
+    { icon: SiFigma, color: 'text-pink-400' },
+  ]
+
   return (
-    <section id='skills' className='relative py-28'>
-      <ScrollReveal stagger={0.08} className='text-center'>
-        {/* <p className='text-white/70 mb-6'>I &apos;m currently looking to join a <span className='text-[#a855f7]'>cross-functional</span> team</p>
-    <p className='text-white/50 text-sm mb-16'>that values improving people&apos;s lives through accessible design </p> */}
-        <div className='relative max-w-4xl mx-auto w-full'>
-          <Image src='/images/skills.png' alt='techstack' width={1200} height={720} className='w-full h-auto' priority />
+    <section id="skills" className="py-24 overflow-hidden relative">
+      <h2 className="text-2xl md:text-3xl font-semibold text-white/90 mb-12">
+        My Tech Stack
+      </h2>
+
+      <div className="relative w-full overflow-hidden">
+        <div className="flex w-max marquee hover:[animation-play-state:paused]">
+          {[...skills, ...skills].map((s, i) => {
+            const Icon = s.icon
+            return (
+              <div
+                key={i}
+                className="mx-10 flex items-center justify-center"
+              >
+                <Icon
+                  className={`text-6xl md:text-7xl ${s.color}
+                  drop-shadow-[0_0_20px_rgba(113,39,186,.45)]`}
+                />
+              </div>
+            )
+          })}
         </div>
-      </ScrollReveal>
+      </div>
     </section>
   )
 }
 
-export default TechStack
+export default SkillSection

@@ -1,7 +1,8 @@
 'use client'
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
-import { HiBars3, HiXMark } from 'react-icons/hi2'; 
+import { HiBars3, HiXMark } from 'react-icons/hi2';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -18,8 +19,10 @@ const Header = () => {
         <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isOpen ? 'bg-[#0b0416]/70 backdrop-blur-md shadow-[0_0_40px_rgba(113,39,86,.20)]' : 'bg-transparent'}`}>
             <div className='max-w-7xl mx-auto px-4 lg:px-8 py-6 flex items-center justify-between'>
                 {/* logo */}
-                <Link href="/" className="text-white font-bold text-xl">Logo</Link>
-                
+                <Link href="/" className="text-white font-bold text-xl">
+                    <Image src='/images/my-logo.png' alt='logo' width={100} height={70} />
+                </Link>
+
                 {/* desktop links */}
                 <nav className='hidden md:flex space-x-10 font-medium text-lg text-white/80'>
                     <Link href="#home" className='hover:text-[#a855f7] transition duration-200'>Home</Link>
@@ -44,6 +47,7 @@ const Header = () => {
                         <Link onClick={() => setIsOpen(false)} href="#about" className='hover:text-[#a855f7] py-2'>About</Link>
                         <Link onClick={() => setIsOpen(false)} href="#skills" className='hover:text-[#a855f7] py-2'>Skills</Link>
                         <Link onClick={() => setIsOpen(false)} href="#experience" className='hover:text-[#a855f7] py-2'>Experience</Link>
+                        <Link onClick={() => setIsOpen(false)} href="#projects" className='hover:text-[#a855f7] py-2'>Projects</Link>
                         <Link onClick={() => setIsOpen(false)} href="#contact" className='hover:text-[#a855f7] py-2'>Contact</Link>
                     </div>
                 </div>
