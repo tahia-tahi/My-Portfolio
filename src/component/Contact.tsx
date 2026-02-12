@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import ScrollReveal from './ScrollReveal'
 
 const Contact = () => {
@@ -17,9 +17,9 @@ const Contact = () => {
                     </Link>
                 </div>
                 <div className='flex items-end gap-2 mt-6'>
-                    <Link href="" target='_blank' rel='noopener noreferrer' className='text-white/90'><FaLinkedin size={20} /></Link>
-                    <Link href="" target='_blank' rel='noopener noreferrer' className='text-white/90'><FaGithub size={20} /></Link>
-                    <Link href="" target='_blank' rel='noopener noreferrer' className='text-white/90'><FaInstagram size={20} /></Link>
+                    <Link href="https://www.linkedin.com/in/kazitahiaidris/" target='_blank' rel='noopener noreferrer' className='text-white/90'><FaLinkedin size={20} /></Link>
+                    <Link href="https://github.com/tahia-tahi" target='_blank' rel='noopener noreferrer' className='text-white/90'><FaGithub size={20} /></Link>
+                    <Link href="https://x.com/TahiaOfficial1" target='_blank' rel='noopener noreferrer' className='text-white/90'><FaTwitter size={20} /></Link>
                 </div>
             </ScrollReveal>
         </section>
